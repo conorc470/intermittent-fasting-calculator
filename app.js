@@ -7,8 +7,10 @@ let fastDuration;
 
 function grabNumbers(){
   lastMealHour = Number(document.getElementById('mealHour').options[document.getElementById('mealHour').selectedIndex].value);
-  lastMealMinutes = Number(document.getElementById('mealMinutes').options[document.getElementById('mealMinutes').selectedIndex].value);
-  fastDuration = Number(document.getElementById('fastingHours').options[document.getElementById('fastingHours').selectedIndex].value);
+  
+	lastMealMinutes = Number(document.getElementById('mealMinutes').options[document.getElementById('mealMinutes').selectedIndex].value);
+  
+	fastDuration = Number(document.getElementById('fastingHours').options[document.getElementById('fastingHours').selectedIndex].value);
 }
 
 // Grab result
