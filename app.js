@@ -37,7 +37,6 @@ function buttonClicked(){
   }
 }
 
-
 function minutesToTime(minutes){
   let hours = Math.floor(minutes / 60);
   let minut = minutes - (hours * 60);

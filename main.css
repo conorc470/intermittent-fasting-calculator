@@ -7,12 +7,19 @@ body {
 	height: 100vh;
 }
 
+ul {
+	padding-left: 1rem;
+}
+
+li {
+	padding-bottom: 0.75rem;
+	line-height: 1.5;
+}
+
 .container {
 	margin: 0 auto;
 	max-width: 1400px;
 	width: 100%;
-	/*min-height: 35rem;*/
-	align-items: center;
 }
 
 .flex {
@@ -22,15 +29,29 @@ body {
 	flex-wrap: nowrap;
 	flex: 1;
 	justify-content: space-between;
+	height: 100vh;
 }
 
-.title {
+.description {
 	display: flex;
 	flex-basis: 50%;
   max-width: 50%;
   flex-direction: column;
   justify-content: center;
   padding: 2.5rem;
+}
+
+.main-heading h1 {
+	font-size: 2rem;
+}
+
+.main-heading p {
+	font-size: 1.2rem;
+	line-height: 1.6;
+}
+
+.sources {
+	font-size: 0.8rem;
 }
 
 section.appContainer {
@@ -46,6 +67,7 @@ section.appContainer {
   border-radius: 8px;
   text-align: center;
 	border: 1px solid lightgrey;
+	padding: 2rem;
 }
 
 #fastingCalculator .title {
