@@ -11,109 +11,117 @@
 </head>
 <body>
 	<div class="container">
-		<!-- Title & Description -->
-		<div class="title">
-			<h1>Intermittent Fasting Calculator</h1>
-			<p>Eating all your meals within 8-10 (maximum 12) hours holds the fountain of health.</p>
-			<p><a>https://www.nytimes.com/2018/07/24/well/when-we-eat-or-dont-eat-may-be-critical-for-health.html</a></p>
-			<p><a>https://www.health.harvard.edu/blog/intermittent-fasting-surprising-update-2018062914156</a></p>
+		<div class="flex">
+
+			<!-- Title & Description -->
+			<section class="title">
+				<h1>Intermittent Fasting Calculator</h1>
+				<p>Eating all your meals within 8-10 (maximum 12) hours holds the fountain of health.</p>
 				<ul>
-					<li>Where possible, stick to a 8, 9, or 10-hour eating window.</li>
+					<li>Where possible, stick to a 8, 9, or 10 hour eating window.</li>
 					<li>Ideally eat earlier in the day rather than later. Do not snack between meals. Also make your earlier meals larger than your dinner.</li>
+					<li>Recommend to have three meals a day, but if you want to skip a meal, skip dinner. Breakfast is important as it is one the signals to your brain to wake up.</li>
 					<li>Wait an hour before you eat or drink anything other than water in the morning and do not eat or drink anything for at least two or three hours before bed.</li>
 					<li>Get as much natural light during the day as possible. At work, try to break up your day with a short walk outdoors, even standing and stretching every hour.</li>
-					<li>Physical activity - Be active throughout the day to let your body burn fat between meals. Do not snack between meals.</li>
+					<li>Physical activity - Be active throughout the day to let your body burn fat between meals. Do not snack between meals. Aim for more than 30minutes of activity under daylight.</li>
 					<li>Eat proper, nourishing foods. Think plant-based, Mediterranean-style diet. - Avoid sugars and refined grains. Instead, eat fruits, vegetables, beans, lentils, whole grains, lean proteins, and healthy fats (a sensible, plant-based, Mediterranean-style diet).</li>
+					<li>Sleep - Make it cool. No bright lights 2 hours before bedtime. </li>
 				</ul>
-		</div>
+				<h3>Sources:</h3>
+				<p><a>https://www.nytimes.com/2018/07/24/well/when-we-eat-or-dont-eat-may-be-critical-for-health.html</a></p>
+				<p><a>https://www.health.harvard.edu/blog/intermittent-fasting-surprising-update-2018062914156</a></p>
+				<p><a>https://twitter.com/satchinpanda/status/1345379570556481536</a></p>
+			</section>
 
 		<!-- Calculator -->
-		<section class="appContainer">
-			<div id="fastingCalculator">
-				<form action="">
-					<div class="row">
-						<label class="" for="mealHour" id="mealHourLabel">Last meal:</label>
-						<div class="time">
-							<select class="" name="mealHour" id="mealHour">
-								<option value="00">00</option>
-								<option value="01">01</option>
-								<option value="02">02</option>
-								<option value="03">03</option>
-								<option value="04">04</option>
-								<option value="05">05</option>
-								<option value="06">06</option>
-								<option value="07">07</option>
-								<option value="08">08</option>
-								<option value="09">09</option>
-								<option value="10">10</option>
-								<option value="11">11</option>
-								<option value="12">12</option>
-								<option value="13">13</option>
-								<option value="14">14</option>
-								<option value="15">15</option>
-								<option value="16">16</option>
-								<option value="17">17</option>
-								<option value="18">18</option>
-								<option value="19">19</option>
-								<option value="20" selected="selected">20</option>
-								<option value="21">21</option>
-								<option value="22">22</option>
-								<option value="23">23</option>
-							</select>
-							<label class="" for="mealMinutes" id="mealMinutesLabel">:</label>
-							<select class="" name="mealMinutes" id="mealMinutes">
-								<option value="00" selected="selected">00</option>
-								<option value="15">15</option>
-								<option value="30">30</option>
-								<option value="45">45</option>
-							</select>
-							<p>hs</p>
+			<section class="appContainer">
+				<div id="fastingCalculator">
+					<h3>Fasting Calculator</h3>
+					<form action="">
+						<div class="row">
+							<label class="" for="mealHour" id="mealHourLabel">Last meal:</label>
+							<div class="time">
+								<select class="" name="mealHour" id="mealHour">
+									<option value="00">00</option>
+									<option value="01">01</option>
+									<option value="02">02</option>
+									<option value="03">03</option>
+									<option value="04">04</option>
+									<option value="05">05</option>
+									<option value="06">06</option>
+									<option value="07">07</option>
+									<option value="08">08</option>
+									<option value="09">09</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+									<option value="13">13</option>
+									<option value="14">14</option>
+									<option value="15">15</option>
+									<option value="16">16</option>
+									<option value="17">17</option>
+									<option value="18">18</option>
+									<option value="19">19</option>
+									<option value="20" selected="selected">20</option>
+									<option value="21">21</option>
+									<option value="22">22</option>
+									<option value="23">23</option>
+								</select>
+								<label class="" for="mealMinutes" id="mealMinutesLabel">:</label>
+								<select class="" name="mealMinutes" id="mealMinutes">
+									<option value="00" selected="selected">00</option>
+									<option value="15">15</option>
+									<option value="30">30</option>
+									<option value="45">45</option>
+								</select>
+								<p>hs</p>
+							</div>
 						</div>
-					</div>
-					<div class="row">
-						<label class="" for="fastingHours" id="fastingHoursLabel">Fast duration:</label>
-						<div class="time">
-							<select class="" name="fastingHours" id="fastingHours">
-								<option value="01">01</option>
-								<option value="02">02</option>
-								<option value="03">03</option>
-								<option value="04">04</option>
-								<option value="05">05</option>
-								<option value="06">06</option>
-								<option value="07">07</option>
-								<option value="08">08</option>
-								<option value="09">09</option>
-								<option value="10">10</option>
-								<option value="11">11</option>
-								<option value="12">12</option>
-								<option value="13">13</option>
-								<option value="14">14</option>
-								<option value="15">15</option>
-								<option value="16" selected="selected">16</option>
-								<option value="17">17</option>
-								<option value="18">18</option>
-								<option value="19">19</option>
-								<option value="20">20</option>
-								<option value="21">21</option>
-								<option value="22">22</option>
-								<option value="23">23</option>
-							</select>
-							<p>hours</p>
+						<div class="row">
+							<label class="" for="fastingHours" id="fastingHoursLabel">Fast duration:</label>
+							<div class="time">
+								<select class="" name="fastingHours" id="fastingHours">
+									<option value="01">01</option>
+									<option value="02">02</option>
+									<option value="03">03</option>
+									<option value="04">04</option>
+									<option value="05">05</option>
+									<option value="06">06</option>
+									<option value="07">07</option>
+									<option value="08">08</option>
+									<option value="09">09</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+									<option value="13">13</option>
+									<option value="14">14</option>
+									<option value="15">15</option>
+									<option value="16" selected="selected">16</option>
+									<option value="17">17</option>
+									<option value="18">18</option>
+									<option value="19">19</option>
+									<option value="20">20</option>
+									<option value="21">21</option>
+									<option value="22">22</option>
+									<option value="23">23</option>
+								</select>
+								<p>hours</p>
+							</div>
 						</div>
-					</div>
-					<div class="row">
-						<label for="result">Next meal at:</label>
-						<div class="time">
-							<div id="hourResult">00</div>
-							<p>:</p>
-							<div id="minResult">00</div>
-							<p>hs</p>
+						<div class="row">
+							<label for="result">Next meal at:</label>
+							<div class="time">
+								<div id="hourResult">00</div>
+								<p>:</p>
+								<div id="minResult">00</div>
+								<p>hs</p>
+							</div>
 						</div>
-					</div>
-					<button type="button" class="btn" id="btn-calculate">Calculate</button>
-				</form>
-			</div>
-		</section>
+						<button type="button" class="btn" id="btn-calculate">Calculate</button>
+					</form>
+				</div>
+			</section>
+		</div>
 	</div>
   <script src="app.js"></script>
 </body>

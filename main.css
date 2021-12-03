@@ -1,28 +1,51 @@
-* {
+body {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
+	height: 100vh;
 }
 
 .container {
+	margin: 0 auto;
+	max-width: 1400px;
+	width: 100%;
+	/*min-height: 35rem;*/
+	align-items: center;
+}
+
+.flex {
+	align-items: center;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	flex: 1;
+	justify-content: space-between;
+}
+
+.title {
+	display: flex;
+	flex-basis: 50%;
+  max-width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.5rem;
 }
 
 section.appContainer {
-  height: 100vh;
-  padding: 2rem;
+	display:flex;
+	flex-basis: 50%;
+  max-width: 50%;
+	flex-direction: column;
+  justify-content: center;
+  padding: 5rem;
 }
 
 #fastingCalculator {
-  margin: auto;
-  border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  width: 500px;
+  border-radius: 8px;
   text-align: center;
+	border: 1px solid lightgrey;
 }
 
 #fastingCalculator .title {
