@@ -1,39 +1,39 @@
 const day = 1440;
 
-// Values from form
+// Grab Values
 let lastMealHour;
 let lastMealMinutes;
-let fastDuration;
+let eatingWindow;
 
 function grabNumbers(){
   lastMealHour = Number(document.getElementById('mealHour').options[document.getElementById('mealHour').selectedIndex].value);
   
 	lastMealMinutes = Number(document.getElementById('mealMinutes').options[document.getElementById('mealMinutes').selectedIndex].value);
   
-	fastDuration = Number(document.getElementById('fastingHours').options[document.getElementById('fastingHours').selectedIndex].value);
+	eatingWindow = Number(document.getElementById('eatingWindow').options[document.getElementById('eatingWindow').selectedIndex].value);
 }
 
-// Grab result
+// Get Result
 let hourResult = document.getElementById('hourResult');
 let minResult = document.getElementById('minResult');
 
-// Button event listener
+// Button Event Listener
 const button = document.getElementById('btn-calculate');
 
 button.addEventListener('click', buttonClicked);
 
-let endFast;
+let endWindow;
 function buttonClicked(){
   grabNumbers();
-  let startFast = (lastMealHour * 60) + lastMealMinutes;
-  fastDuration *= 60;
-  let totalMins = startFast + fastDuration;
+  let startWindow = (lastMealHour * 60) + lastMealMinutes;
+  eatingWindow *= 60;
+  let totalMins = startWindow + eatingWindow;
   if(totalMins > day){
-    endFast = totalMins - day;
-    return minutesToTime(endFast);
+    endWindow = totalMins - day;
+    return minutesToTime(endWindow);
   } else {
-    endFast = totalMins;
-    return minutesToTime(endFast);
+    endWindow = totalMins;
+    return minutesToTime(endWindow);
   }
 }
 
