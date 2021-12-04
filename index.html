@@ -31,12 +31,13 @@
 				<a href="https://twitter.com/satchinpanda/status/1345379570556481536">3</a></p>
 			</section>
 			<!-- Calculator -->
-			<section class="appContainer">
+			<section class="calculatorContainer">
 				<div id="fastingCalculator">
-					<h3>Calculate Last Meal Time</h3>
+					<h3>Select breakfast time and fasting duration</h3>
 					<form action="">
+						<!-- 1. First Meal -->
 						<div class="row">
-							<label class="" for="mealHour" id="mealHourLabel">Last meal:</label>
+							<label class="" for="mealHour" id="mealHourLabel">First Bite:</label>
 							<div class="time">
 								<select class="" name="mealHour" id="mealHour">
 									<option value="00">00</option>
@@ -74,8 +75,9 @@
 								<p>hs</p>
 							</div>
 						</div>
+						<!-- 2. Fast Duration -->
 						<div class="row">
-							<label class="" for="fastingHours" id="fastingHoursLabel">Fast duration:</label>
+							<label class="" for="fastingHours" id="fastingHoursLabel">Fast Duration:</label>
 							<div class="time">
 								<select class="" name="fastingHours" id="fastingHours">
 									<option value="01">01</option>
@@ -105,8 +107,9 @@
 								<p>hours</p>
 							</div>
 						</div>
-						<div class="row">
-							<label for="result">Next meal at:</label>
+						<!-- 3. Last Bite -->
+						<div class="row lastBite">
+							<label for="result">Last Bite:</label>
 							<div class="time">
 								<div id="hourResult">00</div>
 								<p>:</p>
@@ -114,7 +117,7 @@
 								<p>hs</p>
 							</div>
 						</div>
-						<button type="button" class="btn" id="btn-calculate">Calculate</button>
+						<button type="button" class="btn" id="btn-calculate">Calculate When To Stop Eating</button>
 					</form>
 				</div>
 			</section>
