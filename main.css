@@ -1,3 +1,23 @@
+.flex {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	flex: 1;
+	justify-content: space-between;
+	height: 100vh;
+}
+
+.description {
+	display: flex;
+	flex-basis: 50%;
+  max-width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.5rem;
+	color: white;
+}
+
 body {
   scroll-behavior: smooth;
   margin: 0;
@@ -45,29 +65,10 @@ li {
 	width: 100%;
 }
 
-.flex {
-	align-items: center;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	flex: 1;
-	justify-content: space-between;
-	height: 100vh;
-}
-
-.description {
-	display: flex;
-	flex-basis: 50%;
-  max-width: 50%;
-  flex-direction: column;
-  justify-content: center;
-  padding: 2.5rem;
-	color: white;
-}
-
 a {
 	color: white;
 }
+
 .main-heading h1 {
 	font-size: 2.25rem;
 }
@@ -149,3 +150,37 @@ section.appContainer {
 #fastingCalculator button:active {
   filter: brightness(90%);
 }
+
+
+@media only screen and (max-width: 900px) {
+  body {
+		height: auto;
+		padding-bottom: 2rem;
+	}
+	.flex {
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+		height:auto;
+	}
+	section.appContainer {
+		align-self: flex-start;
+		flex-basis: 100%;
+    width: 85%;
+    max-width: 100%;
+    padding: 0 0 0 1.5rem;
+	}
+	.description {
+		flex-basis: 100%;
+		max-width: 100%;
+		padding: 1.2rem;
+	}
+	#fastingCalculator {
+		padding: 1rem;
+		width: 90%;
+	}
+}
+
