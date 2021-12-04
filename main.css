@@ -10,7 +10,7 @@
 
 .description {
 	display: flex;
-	flex-basis: 50%;
+	flex-basis: 60%;
   max-width: 50%;
   flex-direction: column;
   justify-content: center;
@@ -27,10 +27,6 @@ body {
 	height: 100vh;
 	background: rgb(0,18,79);
 	background: linear-gradient(180deg, rgba(0,18,79,1) 0%, rgba(0,72,149,1) 100%);
-}
-
-.lastBite {
-	background:rgb(255, 244, 227);
 }
 
 .icons {
@@ -88,17 +84,17 @@ a {
 
 .calculatorContainer {
 	display:flex;
-	flex-basis: 50%;
-  max-width: 50%;
+	flex-basis: 40%;
+  max-width: 40%;
 	flex-direction: column;
   justify-content: center;
-  padding: 5rem;
+  padding: 2rem;
 }
 
 #fastingCalculator {
   border-radius: 8px;
   text-align: center;
-	padding: 3rem;
+	padding: 2rem;
 	background: #ffffff;
 }
 
@@ -130,6 +126,7 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+
 #fastingCalculator form .row .time * {
   margin-left: 5px;
 }
@@ -138,23 +135,40 @@ a {
   padding: 0.3rem;
 }
 
+/* Button CSS */
 #fastingCalculator button {
-  padding: 0.5rem 0.75rem;
-  border-radius: 10px;
-  border: none;
-  /* border: 1px solid #000; */
-  background-color: var(--primaryColor);
-  text-transform: uppercase;
-  font-weight: bold;
+  padding: 1.25rem 2.5rem;
+  border-radius: 4px;
+  border: 1px solid orange; 
+  color: #000000;
   cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 1rem;
+  background: #F6C33D;
+   background-image: -webkit-linear-gradient(top, #F6C33D, #EBA525);
+   background-image: -moz-linear-gradient(top, #F6C33D, #EBA525);
+   background-image: -ms-linear-gradient(top, #F6C33D, #EBA525);
+   background-image: -o-linear-gradient(top, #F6C33D, #EBA525);
 }
+
+.lastBite .time {
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+.lastBite {
+	font-weight: bold;
+	padding: 2rem 0;
+}
+
 #fastingCalculator button:hover {
-  filter: brightness(150%);
+  filter: brightness(110%);
 }
+
 #fastingCalculator button:active {
   filter: brightness(90%);
 }
-
 
 @media only screen and (max-width: 900px) {
   body {
@@ -187,4 +201,3 @@ a {
 		width: 90%;
 	}
 }
-
