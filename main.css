@@ -8,6 +8,10 @@
 	height: 100vh;
 }
 
+ul, ol {
+margin: 0.2rem 0;
+}
+
 .description {
 	display: flex;
 	flex-basis: 60%;
