@@ -8,6 +8,10 @@
 	height: 100vh;
 }
 
+ select:active {
+	 border: 1px solid blue;
+}
+
 .description {
 	display: flex;
 	flex-basis: 60%;
