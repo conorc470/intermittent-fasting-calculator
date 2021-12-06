@@ -26,7 +26,7 @@ let endWindow;
 function buttonClicked(){
   flashOrange();
 function flashOrange() {
-  document.getElementById('get').style.backgroundColor = '#ffe194';
+  document.getElementById('get').style.backgroundColor = '#ffdf8b';
     setTimeout(function(){
   document.getElementById('get').style.backgroundColor = 'white';;
   }, 500)
