@@ -140,7 +140,7 @@ a {
    border: 1px solid #bcbcbc;
 }
 
-select::hover {
+select:hover {
 	font-size: 1.1rem;
 	cursor: pointer;
 	border: 1px solid #e79c2b;
