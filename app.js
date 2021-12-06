@@ -24,6 +24,7 @@ button.addEventListener('click', buttonClicked);
 
 let endWindow;
 function buttonClicked(){
+  document.getElementById('get').style.backgroundColor = 'orange';
   grabNumbers();
   let startWindow = (lastMealHour * 60) + lastMealMinutes;
   eatingWindow *= 60;
@@ -35,7 +36,7 @@ function buttonClicked(){
     endWindow = totalMins;
     return minutesToTime(endWindow);
   }
-}
+};
 
 function minutesToTime(minutes){
   let hours = Math.floor(minutes / 60);
