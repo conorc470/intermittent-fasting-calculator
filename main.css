@@ -134,15 +134,16 @@ a {
   margin-left: 5px;
 }
 
+#fastingCalculator form select:hover {
+font-size: 1.1rem;
+cursor: pointer;
+border: 1px solid orange!important;
+}
+
 #fastingCalculator form select {
    padding: 0.5rem;
    border-radius: 4px;
    border: 1px solid #bcbcbc;
-}
-
-select:hover {
-	font-size: 1.1rem;
-	cursor: pointer;
 	border: 1px solid orange!important;
 }
 
