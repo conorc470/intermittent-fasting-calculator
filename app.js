@@ -24,7 +24,13 @@ button.addEventListener('click', buttonClicked);
 
 let endWindow;
 function buttonClicked(){
+  flashOrange();
+function flashOrange() {
   document.getElementById('get').style.backgroundColor = 'orange';
+    setTimeout(function(){
+  document.getElementById('get').style.backgroundColor = 'white';;
+  }, 500)
+}
   grabNumbers();
   let startWindow = (lastMealHour * 60) + lastMealMinutes;
   eatingWindow *= 60;
