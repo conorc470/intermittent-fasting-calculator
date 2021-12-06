@@ -44,7 +44,7 @@ function flashOrange() {
   }
 };
 
-/*function minutesToTime(minutes){
+function minutesToTime(minutes){
   let hours = Math.floor(minutes / 60);
   let minut = minutes - (hours * 60);
   hourResult.innerText = hours;
@@ -53,4 +53,4 @@ function flashOrange() {
   } else {
     minResult.innerText = '00';
   }
-}*/
+}
